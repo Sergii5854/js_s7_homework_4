@@ -1,0 +1,129 @@
+header {
+  h2 {
+    background: linear-gradient(to bottom, #779815 0%, #99cc01 100%);
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    display: block;
+    padding: 33px 35px;
+    font-size: 32px;
+    font-weight: 200;
+    line-height: 14.16px;
+    color: #ffffff;
+    letter-spacing: 1.3px;
+    b {
+      font-weight: 900;
+      font-family: 'Roboto', sans-serif;
+      letter-spacing: 8px;
+    }
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ul {
+      display: flex;
+      position: relative;
+
+      li {
+        padding: 33px 30px;
+        position: relative;
+        a {
+          color: #093500;
+          font-size: 21px;
+          font-weight: 400;
+          line-height: 14.16px;
+          white-space: nowrap;
+          transition: .3s;
+        }
+        a:hover{
+          color: #80a60f;
+        }
+      }
+      li:after {
+        content: '';
+        position: absolute;
+        top: 33px;
+        left: 0;
+        background-image: url(./../../img/arrow.png);
+        width: 13px;
+        height: 13px;
+
+      }
+      li:first-child:after {
+        content: '';
+        position: absolute;
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+@media (max-width: 799px) {
+  header {
+    h2 {
+      font-size: 25px;
+    }
+
+    nav {
+      position: relative;
+      right: 0px;
+      width: 100%;
+      top: 60px;
+      &:before {
+        content: '\2630';
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: -115px;
+        line-height: 30px;
+        cursor: pointer;
+        background-color: #fff;
+        padding: 0 10px 0 10px;
+        border: 1px solid;
+      }
+      ul {
+        background: rgba(167, 210, 40, 0.89);
+        width: 100%;
+        display: none;
+        position: absolute;
+        margin: 45px auto 0 ;
+        text-align: center;
+
+        transition: .6s;
+        //transform: translateX(800px);
+        li {
+          padding: 5px;
+          a {
+            display: block;
+            padding: 10px 3%;
+            color: #fff;
+          }
+          a:hover {
+            padding-left: 20px;
+            color: #fff;
+            background-color: #445536;
+            border-radius: 50px;
+          }
+        }
+        li:after{
+          display: none;
+        }
+      }
+
+    }
+  }
+    // Transition
+  header  nav ul {
+      display: none;
+      position: absolute;
+      transform:   translateY(800px);
+    }
+
+  header nav.open ul {
+    transition: .6s;
+      display: block;
+      position: absolute;
+      transform: translateY(0px);
+    }
+  }
+

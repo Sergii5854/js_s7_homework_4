@@ -1,0 +1,120 @@
+.about {
+  display: flex;
+  padding: 20px 25px 22px;
+  max-width: 770px;
+  margin: 0 auto;
+  width: 100%;
+  .left-side {
+    width: 35%;
+    .wrap-content {
+      padding: 0 27px 0 0;
+      border-right: 1px solid #eeeefb;
+      h3 {
+        padding: 0 0 23px 0;
+      }
+      article {
+        h4 {
+          padding: 0 0 5px 0;
+        }
+        p {
+
+        }
+      }
+    }
+  }
+  .right-side {
+    width: 65%;
+    padding: 0 0 0 20px;
+    .top {
+      display: flex;
+      padding-bottom: 15px;
+      aside {
+        padding: 0 0 15px 20px;
+
+        h3 {
+          padding: 0 0 23px 0;
+        }
+        h4 {
+          padding: 0 0 5px 0;
+        }
+      }
+
+    }
+    .bottom {
+      padding-top: 17px;
+      border-top: 1px solid #eeeefb;
+      display: flex;
+      aside {
+        padding: 0 0 0 20px;
+        h3 {
+          padding: 0 0 23px 0;
+        }
+        h4 {
+          padding: 0 0 5px 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 799px) {
+  .about {
+    display: block;
+    padding: 20px 10px;
+    //max-width: 320px;
+
+    margin: 0 auto;
+    width: 100%;
+    .left-side {
+      width: 100%;
+      .wrap-content {
+        padding: 0 10px;
+        border-right: 1px solid #eeeefb;
+        h3 {
+          padding: 0 0 23px 0;
+        }
+        article {
+          h4 {
+            padding: 0 0 5px 0;
+          }
+
+        }
+      }
+    }
+    .right-side {
+      width: 100%;
+      padding: 0 10px;
+      .top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+        aside {
+          padding:5px 0;
+
+          h3 {
+            padding:5px 0;
+          }
+          h4 {
+            padding:5px 0;
+          }
+        }
+      }
+      .bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+        aside {
+          padding:5px 0;
+          h3 {
+            padding:5px 10px;
+          }
+          h4 {
+            padding:5px 0;
+          }
+        }
+      }
+    }
+  }
+}

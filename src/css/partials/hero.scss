@@ -1,0 +1,68 @@
+.hero{
+  width: 100%;
+  background: #f0f2fe;
+	.wrap{
+      max-width: 770px;
+      margin: 0 auto;
+      display: flex;
+
+		aside{
+            .main-title-hero {
+              padding: 33px 0 25px 15px;
+              color: #093500;
+              font-size: 35px;
+              font-weight: 200;
+              line-height: 14.16px;
+              font-family: 'Roboto', sans-serif;
+              white-space: nowrap;
+              b {
+                font-weight: 900;
+                font-family: 'Roboto', sans-serif;
+                letter-spacing: 5px;
+              }
+            }
+            article {
+              h4 {
+                padding: 0 0 5px 55px;
+                white-space: nowrap;
+              }
+              .content {
+                padding: 0 15px 0 55px;
+              }
+            }
+
+		}
+	}
+}
+
+@media (max-width: 799px) {
+  .hero{
+    .wrap{
+      width: 100%;
+      margin: 0 auto;
+      display: block;
+      img{
+        margin: 0 auto;
+        display: block;
+      }
+      aside{
+        .main-title-hero {
+          padding: 20px  15px;
+          color: #093500;
+          font-size: 25px;
+        }
+        article {
+          h4 {
+            padding: 0 15px;
+            white-space: nowrap;
+          }
+          .content {
+            padding: 0 15px;
+          }
+        }
+
+      }
+    }
+  }
+
+}
