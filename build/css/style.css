@@ -121,7 +121,7 @@ header nav {
       position: absolute;
       top: 33px;
       left: 0;
-      background-image: url(./../../img/arrow.png);
+      background-image: url(./../../img/nav-after.png);
       width: 13px;
       height: 13px; }
     header nav ul li:first-child:after {
